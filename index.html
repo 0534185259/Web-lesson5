@@ -2,21 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   
+<style>
+    body{
+      text-align: center;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;  
+    }
+    #res{
+
+    }
+</style>
 </head>
 <body>
+
+    <input id="filter" type="text">
+    <br><br>
+    <button onclick="f1()">סנן</button>
+    <p id="res"></p>
+    <select id="select" onchange="f3()"></select>
+    <p id="res2"></p>
+    <input type="number" id="fYear">
+    <input type="number" id="lYear">
+    <button onclick="f4()">find first between</button>
+    <p id="res3"></p>
+    <table id="tab"></table>
+    <h2>add product</h2>
+
+    <label>title:</label>
+    <input type="text" id="title">
+    <br>
+    <br>
+    <label>artist:</label>
+    <input type="text" id="artist">  
+    <br>
+    <br>
+    <label>country:</label>
+    <input type="text" id="country">  
+    <br>
+    <br>
+    <label>company:</label>
+    <input type="text" id="company"> 
+    <br> 
+    <br>
+    <label>price:</label>
+    <input type="number" id="price">
+    <br>
+    <br>
+    <label>year:</label>
+    <input type="number" id="year">
+    <br>
+    <br>
+    <button onclick="f6()">add to catalog</button>
+    <br>
+    <br>
+    <h2>remove product</h2>
+    <input type="text" id="remove">
+    <br>
+    <br>
+    <button onclick="f7()">remove</button>
+
+
+
+
+
+
     <script src="./cd_array.js"></script>
-    <script src="./ex5.js"></script>
-    <script src="./functions.js"></script>
-    
-   <input type="text" id="filter">
-   <button  onclick="f1()">filter </button>
-   <p id="result"></p>
-   <select name="countries" id="countries" onchange="f3()">
-   </select>
+    <script src="./func.js"> </script>
+    <script src="./ex5.js"> </script>
+    <script src="./ex5_2.js"> </script>
 
 </body>
 </html>
